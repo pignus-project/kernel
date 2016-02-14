@@ -662,6 +662,8 @@ Patch721: tipc-fix-an-infoleak-in-tipc_nl_compat_link_dump.patch
 #CVE-2016-5244 rhbz 1343338 1343337
 Patch722: rds-fix-an-infoleak-in-rds_inc_info_copy.txt
 
+Patch66601: 0001-ARM-bcm2835-dt-Add-Raspberry-Pi-Zero.patch
+
 # END OF PATCH DEFINITIONS
 
 %endif
@@ -2181,6 +2183,7 @@ fi
 %changelog
 * Thu Jun 09 2016 Lubomir Rintel <lkundrak@v3.sk> - 4.5.7-200.pi1
 - Build for bcm2835/rpi
+- Add Raspberry Pi Zero dts
 
 * Wed Jun 08 2016 Josh Boyer <jwboyer@fedoraproject.org> - 4.5.7-200
 - Linux v4.5.7
