@@ -663,6 +663,9 @@ Patch721: tipc-fix-an-infoleak-in-tipc_nl_compat_link_dump.patch
 Patch722: rds-fix-an-infoleak-in-rds_inc_info_copy.txt
 
 Patch66601: 0001-ARM-bcm2835-dt-Add-Raspberry-Pi-Zero.patch
+Patch66602: 0002-ARM-bcm2835-dt-Add-the-ethernet-to-the-device-trees.patch
+Patch66603: 0003-USB-core-let-USB-device-know-device-node.patch
+Patch66604: 0004-net-smscx5xx-use-the-device-tree-for-mac-address.patch
 
 # END OF PATCH DEFINITIONS
 
@@ -2184,6 +2187,7 @@ fi
 * Thu Jun 09 2016 Lubomir Rintel <lkundrak@v3.sk> - 4.5.7-200.pi1
 - Build for bcm2835/rpi
 - Add Raspberry Pi Zero dts
+- Use stable MAC address for rpi boards with ethernet
 
 * Wed Jun 08 2016 Josh Boyer <jwboyer@fedoraproject.org> - 4.5.7-200
 - Linux v4.5.7
