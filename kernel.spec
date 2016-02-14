@@ -648,6 +648,8 @@ Patch855: 0001-platform-x86-ideapad-laptop-Add-Lenovo-Yoga-910-13IK.patch
 #CVE-2016-8645 rhbz 1393904 1393908
 Patch856: 0001-tcp-take-care-of-truncations-done-by-sk_filter.patch
 
+Patch66601: 0001-ARM-bcm2835-dt-Add-Raspberry-Pi-Zero.patch
+
 # END OF PATCH DEFINITIONS
 
 %endif
@@ -2177,6 +2179,7 @@ fi
 %changelog
 * Wed Nov 16 2016 Lubomir Rintel <lkundrak@v3.sk> - 4.8.8-200.pi1
 - Build for bcm2835/rpi
+- Add Raspberry Pi Zero dts
 
 * Tue Nov 15 2016 Justin M. Forbes <jforbes@fedoraproject.org> - 4.8.8-200
 - Linux v4.8.8
