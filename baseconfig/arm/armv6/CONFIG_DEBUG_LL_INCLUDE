@@ -1,0 +1,1 @@
+CONFIG_DEBUG_LL_INCLUDE="debug/pl01x.S"
