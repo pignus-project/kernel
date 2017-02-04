@@ -31,6 +31,8 @@ aarch64=baseconfig:baseconfig-arm:baseconfig-arm-arm64
 aarch64-debug=baseconfig:baseconfig-arm:baseconfig-arm-arm64:debugconfig:debugconfig-arm
 
 # arm
+armv6hl=baseconfig:baseconfig-arm:baseconfig-arm-armv6
+armv6hl-debug=baseconfig:baseconfig-arm:baseconfig-arm-armv6:debugconfig:debugconfig-arm
 armv7hl=baseconfig:baseconfig-arm:baseconfig-arm-armv7:baseconfig-arm-armv7-armv7
 armv7hl-debug=baseconfig:baseconfig-arm:baseconfig-arm-armv7:baseconfig-arm-armv7-armv7:debugconfig:debugconfig-arm:debugconfig-arm-armv7
 armv7hl-lpae=baseconfig:baseconfig-arm:baseconfig-arm-armv7:baseconfig-arm-armv7-lpae
