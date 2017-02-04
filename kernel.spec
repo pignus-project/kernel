@@ -25,6 +25,7 @@ Summary: The Linux kernel
 %endif
 
 # define buildid .local
+%define buildid .pi1
 
 # baserelease defines which build revision of this kernel version we're
 # building.  We used to call this fedora_build, but the magical name
@@ -296,7 +297,7 @@ Summary: The Linux kernel
 %define kernel_mflags KALLSYMS_EXTRA_PASS=1
 # we only build headers/perf/tools on the base arm arches
 # just like we used to only build them on i386 for x86
-%ifnarch armv7hl
+%ifnarch armv6hl armv7hl
 %define with_headers 0
 %define with_cross_headers 0
 %define with_perf 0
@@ -420,6 +421,7 @@ Source16: mod-extra.list
 Source17: mod-extra.sh
 Source18: mod-sign.sh
 Source90: filter-x86_64.sh
+Source910: filter-armv6hl.sh
 Source91: filter-armv7hl.sh
 Source92: filter-i686.sh
 Source93: filter-aarch64.sh
@@ -432,6 +434,8 @@ Source99: filter-modules.sh
 
 Source20: kernel-aarch64.config
 Source21: kernel-aarch64-debug.config
+Source220: kernel-armv6hl.config
+Source230: kernel-armv6hl-debug.config
 Source22: kernel-armv7hl.config
 Source23: kernel-armv7hl-debug.config
 Source24: kernel-armv7hl-lpae.config
@@ -2191,6 +2195,9 @@ fi
 #
 #
 %changelog
+* Mon May 15 2017 Lubomir Rintel <lkundrak@v3.sk> - 4.11.0-2.pi1
+- Build for bcm2835/rpi
+
 * Tue May 09 2017 Laura Abbott <labbott@fedoraproject.org>
 - Fix EXPORT_SYMBOL for external modules that shall not be named
 

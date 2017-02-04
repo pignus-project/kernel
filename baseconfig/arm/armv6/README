@@ -1,0 +1,6 @@
+This directory contains options specific to Linux on a Raspberry Pi.
+This includes the Raspberry Pi 1 Model B, Raspberry Pi 1 Model B+,
+Raspberry Pi 1 Model A and Raspberry Pi Zero.
+
+For the Raspberry Pi 2 and Raspberry Pi 3 models, use the regular
+Fedora releases for armv7hl architecture.
